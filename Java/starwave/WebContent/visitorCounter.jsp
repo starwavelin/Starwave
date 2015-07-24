@@ -7,14 +7,6 @@
 	
 	String vCount = counter.readRecord(countURL);
 	counter.writeRecord(countURL, vCount);
-	
-	//Integer visitorCount = (Integer) application.getAttribute("visitorCount");	
-	/* if (visitorCount == null) {
-		//visitorCount = 1;
-	} else {
-		//visitorCount++;
-	} */
-	//application.setAttribute("visitorCount", vCount);
 %>
 <div class="footer-text-line">
 	<h5>You are the No. 
