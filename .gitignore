@@ -4,3 +4,8 @@
 Java/starwave/build
 Java/starwave/WebContent/~cse534
 Java/starwave/WebContent/docs
+Java/starwave/WebContent/count.txt
+Java/starwave/WebContent/res
+
+Java/starwave/src/common/IConstant.java
+
