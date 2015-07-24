@@ -294,7 +294,8 @@
 				<!-- CONTACT FORM -->
 				<div class="col-sm-7 col-md-9">
 					<!-- Instead of using assets/php/mail.php, I chose Java Servlet. -->
-					<form class="form-style validate-form clearfix" action="Mail" method="GET">
+					<form name="contactForm" class="form-style validate-form clearfix" action="Mail" method="GET"
+						onsubmit="return checkInput(this);">
 
 					<!-- form left col -->
 					<div class="col-md-6">
@@ -381,6 +382,7 @@
 <!-- Custom functions for this theme -->
 <script src="res/js/functions.js"></script>
 <script src="res/js/initialise-functions.js"></script>
+<script src="res/js/input-validation.js"></script>
 
 </body>
 </html>

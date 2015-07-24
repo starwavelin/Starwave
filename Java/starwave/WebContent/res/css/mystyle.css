@@ -1,0 +1,25 @@
+/* It is recommended to place all your extra/additional CSS rules here */
+ @media (min-width: 768px) { p #hireme {
+	float: right;
+	margin-left: 20px;
+}
+}
+
+#aboutme {
+	padding-top: 40px;
+}
+
+.introduction p {
+	font-size: 19px;
+	margin-top: 10px;
+	line-height: 21px;
+}
+
+#main-menu a {
+	text-transform: capitalize;
+}
+
+.vcounter {
+	color: #9ec4db;
+	font-weight: bold;
+}
