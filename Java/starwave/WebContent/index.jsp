@@ -123,7 +123,7 @@
                 </p>
                 
 				<p>
-					<a href="docs/Resume_BenjaminLin.pdf" target="_blank" class="btn btn-outline-inverse btn-lg 
+					<a href="docs/BenjaminLin_Resume.pdf" target="_blank" class="btn btn-outline-inverse btn-lg 
 				link-scroll">Resume</a>
 					&nbsp;
 					<a href="https://starwavelin.wordpress.com" class="btn btn-outline-inverse btn-lg 

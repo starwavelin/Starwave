@@ -13,6 +13,8 @@ import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
+import common.IConstant;
+
 public class EmailThread implements Runnable {
 
 	private String subject;
@@ -25,9 +27,6 @@ public class EmailThread implements Runnable {
 
 	@Override
 	public void run() {
-
-		final String username = "USE_YOUR_OWN_SENDER_EMAIL_ADDRESS";
-		final String pwd = "USE_YOUR_OWN_SENDER_EMAIL_PWD";
 
 		// Get a Properties object SSL
 		Properties props = new Properties();
@@ -43,7 +42,7 @@ public class EmailThread implements Runnable {
 		Session session = Session.getDefaultInstance(props,
 				new javax.mail.Authenticator() {
 					protected PasswordAuthentication getPasswordAuthentication() {
-						return new PasswordAuthentication(username, pwd);
+						return new PasswordAuthentication(IConstant.SENDER_ADDRESS, IConstant.SENDER_PWD);
 					}
 				});
 
@@ -52,11 +51,11 @@ public class EmailThread implements Runnable {
 			Message msg = new MimeMessage(session);
 
 			// Set the sender
-			msg.setFrom(new InternetAddress("USE_YOUR_OWN_SENDER_EMAIL_ADDRESS"));
+			msg.setFrom(new InternetAddress(IConstant.SENDER_ADDRESS));
 
 			// Set the recipient
 			msg.setRecipients(Message.RecipientType.TO,
-					InternetAddress.parse("USE_YOUR_OWN_RECEIVER_EMAIL_ADDRESS"));
+					InternetAddress.parse(IConstant.RECEIVER_ADDRESS));
 
 			// Create mail subject
 			msg.setSubject(subject);
