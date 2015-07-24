@@ -75,8 +75,6 @@
 			<li id="menu-item-chain" class="menu-item scroll"><a href="#chain">Chain Rep</a></li>
 			<li id="menu-item-fbi" class="menu-item scroll"><a href="#fbi">Country Data</a></li>
 			<li id="menu-item-icflash" class="menu-item scroll"><a href="#icflash">ICFlash</a></li>
-			<li id="menu-item-linkedout" class="menu-item scroll"><a href="#linkedout">LinkedOut</a></li>
-			<li id="menu-item-nca" class="menu-item scroll"><a href="#nca">NCA</a></li>
 			<li id="menu-item-prediction" class="menu-item scroll"><a href="#prediction">Price Prediction</a></li>
 			<li id="menu-item-blank" class="menu-item scroll">&nbsp;</li>
 			<li id="menu-item-contact" class="menu-item scroll"><a href="#contact">Contact</a></li>			
@@ -109,7 +107,7 @@
 			<div class="content-wrapper clearfix">
 			<div class="col-sm-10 col-md-9 pull-right introduction">
 				<h1 class="section-title">About Me</h1>
-				<p class="feature-paragraph"><img data-img-src="images/main/profile.jpg" class="lazy pull-right"></p>
+				<p class="feature-paragraph"><img data-img-src="images/main/profile.png" class="lazy pull-right"></p>
 				<p align="left" style="text-indent: 2em"> Hi! My name is Benjamin Lin, Chinese name 林 贤. I am currently 
 					a master student in 
                     Computer Science at Stony Brook University (SBU), NY, USA, and expected to graduate in May 2015. 
@@ -253,68 +251,7 @@
 			</div><!-- .content-wrapper -->
 		</article><!-- .section-wrapper -->
 		
-		
 
-
-
-		<article id="linkedout" class="section-wrapper clearfix" data-custom-background-img="images/main/bg03_linkedout.jpg">
-			<div class="content-wrapper clearfix" >
-
-				<div id="features-carousel" class="carousel slide with-title-indicators max-height" 
-				data-height-percent="70" data-ride="carousel">
-				
-				<!-- Wrapper for slides -->
-				<div class="carousel-inner">
-
-					<div class="item active">
-					<div class="carousel-text-content">
-						<img style="max-width: 100%" src="images/projects/linkedout.png" alt="Lorem Ipsum">
-						<h2 class="title">LinkedOut</h2>
-						<p>Use PostgreSQL, Java Servlet and bootstrap JavaScript/CSS to develop 
-						a simplified version of LinkedIn, with basic endorsing logic implemented.</p>
-						<p><a href="https://github.com/starwavelin/LinkedOut" 
-						class="btn btn-outline-inverse btn-sm" target="_blank">View It</a></p>
-					</div>
-					</div><!-- .item -->					
-
-				</div><!-- .carousel-inner -->
-				</div><!-- #about-carousel -->
-
-			</div><!-- .content-wrapper -->
-		</article><!-- .section-wrapper -->
-		
-		<br /><br /><br /><br /><br />
-		
-		<article id="nca" class="section-wrapper clearfix" data-custom-background-img="images/main/bg03_nca.jpg">
-			<div class="content-wrapper clearfix" >
-
-				<div id="features-carousel" class="carousel slide with-title-indicators max-height" 
-				data-height-percent="70" data-ride="carousel">
-				
-				<!-- Wrapper for slides -->
-				<div class="carousel-inner">
-
-					<div class="item active">
-					<div class="carousel-text-content">
-						<img style="max-width: 100%" src="images/projects/nca.png" alt="Lorem Ipsum">
-						<h2 class="title">Website of National Computerized Agency</h2>
-						<p>Maintain and add values to this marketing website 
-						written using Google Web Toolkit.						 
-						Document the code, including drawing the database model diagram and UML Package/Class diagrams.
-						</p>
-						<p><a href="https://www.ncainsurance.com/" 
-						class="btn btn-outline-inverse btn-sm" target="_blank">View It</a></p>
-					</div>
-					</div><!-- .item -->					
-
-				</div><!-- .carousel-inner -->
-				</div><!-- #about-carousel -->
-
-			</div><!-- .content-wrapper -->
-		</article><!-- .section-wrapper -->
-		
-		<br /><br /><br /><br />
-		
 		<article id="prediction" class="section-wrapper clearfix" data-custom-background-img="images/main/bg03_prediction.jpg">
 			<div class="content-wrapper clearfix" >
 
@@ -340,8 +277,6 @@
 
 			</div><!-- .content-wrapper -->
 		</article><!-- .section-wrapper -->
-
-		
 		
 		
 
