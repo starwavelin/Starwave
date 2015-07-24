@@ -1,0 +1,6 @@
+
+*.class
+
+Java/starwave/build
+Java/starwave/WebContent/~cse534
+Java/starwave/WebContent/docs
