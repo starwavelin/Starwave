@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
-<title>Benjamin X. Lin | Starwavelin's Cabin, A Web/Mobile Developer's Home</title>
+<title>Benjamin X. Lin | Starwavelin's Cabin, A Web/Mobile Engineer's Home</title>
 <link rel="icon" href="images/icons/icon-surn.png" type="image/png" />
 
 <!-- bootstrap-3.3.4 css -->
@@ -108,11 +108,12 @@
 			<div class="col-sm-10 col-md-9 pull-right introduction">
 				<h1 class="section-title">About Me</h1>
 				<p class="feature-paragraph"><img data-img-src="images/main/profile.png" class="lazy pull-right"></p>
-				<p align="left" style="text-indent: 2em"> Hi! My name is Benjamin Lin, Chinese name 林 贤. I am currently 
-					a master student in 
-                    Computer Science at Stony Brook University (SBU), NY, USA, and expected to graduate in May 2015. 
+				<p align="left" style="text-indent: 2em"> Hi! My name is Benjamin Lin, Chinese name 林 贤. 
+					I just graduated from the CS M.S. Program in Stony Brook University and now work as 
+					a software engineer in a financial software company located in New York. 
                     My strength lies on web development with programming language Java, scripting language JavaScript, 
-                    markup languages HTML/CSS/XML, and MySQL/Sybase/SQL Server DB. I am also learning Python now.</p>
+                    markup languages HTML/CSS/XML, and MySQL/SQL Server DB. I am also learning C#, ASP.NET and 
+                    AngularJS now.</p>
 				                
                 <p align="left" style="text-indent: 2em">
                     In my spare time, I like swimming and playing recorder. 
