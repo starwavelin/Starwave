@@ -30,12 +30,25 @@ public class EmailThread implements Runnable {
 
 		// Get a Properties object SSL
 		Properties props = new Properties();
+		
+		/* Use TLS to send Mail */
+		props.put("mail.smtp.host", "smtp.gmail.com");
+		props.put("mail.smtp.starttls.enable", "true");
+		props.put("mail.smtp.auth", "true");
+		props.put("mail.smtp.port", 587);
+		
+		
+		/* Following is the old SSL way of sending Mails
+		 * 
 		props.put("mail.smtp.host", "smtp.gmail.com");
 		props.put("mail.smtp.socketFactory.port", "465");
 		props.put("mail.smtp.socketFactory.class",
 				"javax.net.ssl.SSLSocketFactory");
 		props.put("mail.smtp.auth", "true");
 		props.put("mail.smtp.port", "465");
+		
+		*/
+		
 		System.out
 				.println("Mail Server Properties have been setup successfully!");
 
