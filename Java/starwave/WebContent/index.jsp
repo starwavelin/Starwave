@@ -35,22 +35,6 @@
 <!-- Customized style for this template -->
 <link rel="stylesheet" href="res/css/mystyle.css" />
 
-<!-- JQuery -->
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="res/js/jquery.min.js"><\/script>')</script>
-<!-- Bootstrap js -->
-<script type="text/javascript" src="res/bootstrap-3.3.4/js/bootstrap.min.js"></script>
-
-<!-- mousewheel listener  -->
-<script type="text/javascript" src="res/js/jquery.mousewheel.min.js"></script>
-
-<!-- Easing - for transitions and effects -->
-<script type="text/javascript" src="res/js/jquery.easing.1.3.js"></script>
-
-<!-- Animated scroll -->
-<script type="text/javascript" src="res/js/animatescroll.min.js"></script>
-
-
 </head>
 <body>
 
@@ -242,7 +226,7 @@
 						of 
 						<a href="http://www.internetcensorshiplab.com/" target="_blank">ICLab</a>
 						</p>
-						<p><a href="~cse534/index.html" class="btn btn-outline-inverse btn-sm" target="_blank">View It</a></p>
+						<p><a href="http://www.starwavelin.com/~cse534/" class="btn btn-outline-inverse btn-sm" target="_blank">View It</a></p>
 					</div>
 					</div><!-- .item -->					
 
@@ -288,7 +272,7 @@
 
 				<!-- CONTACT DETAILS -->
 				<div class="contact-details col-sm-5 col-md-3">
-					<p>21 Washington Avenue<br/>East Setauket<br/>NY 11733</p>
+					<p>241 East 120th Street Apt 4A<br/>New York<br/>NY 10035</p>
 				</div>
 				<!-- END: CONTACT DETAILS -->
 
@@ -346,8 +330,8 @@
 				<img src="images/icons/twitter-icon.png" alt="twitter"></a></li>
 			<li><a href="https://starwavelin.wordpress.com/" target="_blank" title="WPress">
 				<img src="images/icons/wpress.png" alt="wpress"></a></li>
-			<li><a href="http://www.2redbeans.com/zh-CN/chinese-singles/vEH2eMcEK8" target="_blank" title="2RedBeans">
-				<img src="images/icons/redbeans-icon.png" alt="2redbeans"></a></li>			
+			<li><a href="https://www.quora.com/profile/Xian-Lin" target="_blank" title="Quora">
+				<img src="images/icons/quora-icon.png" alt="quora"></a></li>			
 		</ul>
 
 		<!-- copyright text -->
@@ -360,6 +344,20 @@
 	
 </div> <!-- end of outer-container -->
 	
+<!-- JQuery -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="res/js/jquery.min.js"><\/script>')</script>
+<!-- Bootstrap js -->
+<script type="text/javascript" src="res/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+
+<!-- mousewheel listener  -->
+<script type="text/javascript" src="res/js/jquery.mousewheel.min.js"></script>
+
+<!-- Easing - for transitions and effects -->
+<script type="text/javascript" src="res/js/jquery.easing.1.3.js"></script>
+
+<!-- Animated scroll -->
+<script type="text/javascript" src="res/js/animatescroll.min.js"></script>
 
 
 <!-- background image strech script -->
