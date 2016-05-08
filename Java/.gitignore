@@ -1,0 +1,9 @@
+
+*.class
+
+**/build
+**/WebContent/docs
+**/WebContent/count.txt
+
+**/src/common/IConstant.java
+
