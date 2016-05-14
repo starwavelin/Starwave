@@ -226,7 +226,7 @@
 						of 
 						<a href="http://www.internetcensorshiplab.com/" target="_blank">ICLab</a>
 						</p>
-						<p><a href="http://www.starwavelin.com/~cse534/" class="btn btn-outline-inverse btn-sm" target="_blank">View It</a></p>
+						<p><a href="./~cse534/" class="btn btn-outline-inverse btn-sm" target="_blank">View It</a></p>
 					</div>
 					</div><!-- .item -->					
 
