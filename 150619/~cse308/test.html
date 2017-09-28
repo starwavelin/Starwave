@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>CSE308 Software Engineering Projects | Test</title>
+        <link rel="icon" href="../images/icons/me.png" type="image/png" />
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
+        <script type="text/javascript" src="../js/jquery-1.10.2.js"></script>
+		<script>
+			$(function() {
+				$("#header").load("header.html");
+				$("#footer").load("footer.html");
+			});
+		</script>
+        <!-- jquery-1.2.6.pack.js is essential for auto height resize! -->
+        <script type="text/javascript" src="../js/jquery-1.2.6.pack.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                // auto height resize
+                $('div.rightfloat').height($('div.leftfloat').height());
+            });
+        </script>
+    </head>
+
+    <body>
+        <!--HEADER-->
+        <div id="header"></div>
+        
+        <div class="main-head-container">
+        <!-- Content Main -->
+
+            <!-- LEFT FLOAT -->
+            <div class="leftfloat">
+                <h2>Software Engineering Project: Requirements of Undergraduate Majors</h2>
+                <h2>Test</h2>
+                <h4>Sample JUnit Test Code</h4>
+                <pre><code>
+  @Test
+  public void test_VerifyCorrectAccountWithDB() {
+     String test = "[Test] VerifyCorrectAccountWithDB(xianlin,1233,student)...";
+     String passed = "[System] VerifyCorrectAccountWithDB(xianlin,1233,student)
+        passed";
+     String failed = "[System] VerifyCorrectAccountWithDB(xianlin,1233,student)
+        failed";
+     MyLogger.LOGGER.log(Level.INFO, test);
+     account = new Account();
+     account.setUserName(userName);
+     account.setPassword(password);
+     account.setFirstName(firstName);
+     account.setLastName(lastName);
+     account.setAccountType(type);
+     assertTrue(failed, account.verify(con));
+     MyLogger.LOGGER.log(Level.INFO, passed);
+  }
+                </code></pre>
+                <p>You may click <a href="./docs/cse308.pptx">here</a>
+                    to download our code review presentation.</p>
+                
+            </div>
+
+
+            <!-- RIGHT FLOAT -->
+            <div class="rightfloat">
+                <h2 class="bg_more"></h2>
+                <div>
+                <table width="230" cellpadding="5px" cellspacing="2px" style="padding-top:10px; margin: 0px 0px; font-size: 9pt">
+                    <tr>
+                        <td width="50"><img src="images/req-analysis.gif" alt="req" width="40"/></td>
+                        <td width="151">
+                            <table width="151">
+                                <tr><td><a href="index.html">Requirement Analysis</a></td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50"><img src="images/design.png" alt="design" width="40"/></td>
+                        <td width="151">
+                            <table width="151">
+                                <tr><td><a href="design.html">Design</a></td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50"><img src="images/code.png" alt="code" width="40"/></td>
+                        <td width="151">
+                            <table width="151">
+                                <tr><td><a href="code.html">Code</a></td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50"><img src="images/test.png" alt="test" width="40"/></td>
+                        <td width="151">
+                            <table width="151">
+                                <tr><td>Test</td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50"><img src="images/deployment.png" alt="deployment" width="40"/></td>
+                        <td width="151">
+                            <table width="151">
+                                <tr><td><a href="./deployment.html">Deployment</a></td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                </div>
+            </div>
+        </div>
+        <!--FOOTER-->
+        <div id="footer"></div>
+		<div class="footer-container">
+			<script type="text/javascript">
+				/* <![CDATA[ */
+				document.write("Last Modified " + document.lastModified)
+				/* ]]> */
+			</script>
+		</div>
+
+    </body>
+</html>
+
+
+

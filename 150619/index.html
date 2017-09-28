@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Benjamin Lin's Cabin | Home Page</title>
+        <link rel="icon" href="./images/icons/me.png" type="image/png" />
+        <link rel="stylesheet" type="text/css" href="./css/style.css" />
+        <link rel="stylesheet" type="text/css" href="./css/imageslider.css" />
+		<script type="text/javascript" src="./js/jquery-1.10.2.js"></script>
+		<script>
+			$(function() {
+				$("#header").load("header.html");
+				$("#footer").load("footer.html");
+			});
+		</script>		
+		<!-- jquery-1.2.6.pack.js is essential for auto height resize! -->
+        <script type="text/javascript" src="./js/jquery-1.2.6.pack.js"></script>
+        <script type="text/javascript">	
+            $(document).ready(function() {
+                // auto height resize
+                $('div.rightfloat').height($('div.leftfloat').height());
+            });
+        </script>
+        <script type="text/javascript" src="./js/imageslider.js"></script>
+
+    </head>
+
+    <body>
+        <!--HEADER-->
+        <div id="header"></div>
+        
+        <div class="main-head-container">
+
+            <!-- Page Image Starts-->
+
+            <!-- Page Image Ends -->
+
+            <!-- Content Main -->
+
+            <!-- LEFT FLOAT -->
+
+            <div class="leftfloat">
+                <h1>Welcome to Benjamin Lin's Cabin</h1>
+
+                <img src="./images/me.jpg" alt="Me in Harvard" style="float:left; margin-right: 1em;"/>
+                <p style="text-indent: 2em">
+                    Hi! My name is Benjamin Lin, Chinese name 林 贤. I am currently a master student in 
+                    Computer Science at Stony Brook University (SBU), NY, USA, and expected to graduate in May 2015. 
+                    My strength lies on web development with programming language Java, scripting language JavaScript, 
+                    markup languages HTML/CSS/XML, and MySQL/Sybase/SQL Server DB. I am also learning Python now.
+                </p>
+                <p style="text-indent: 2em">
+                    Right now, I am actively looking for a junior Software Development Engineer position.
+                </p>
+                <p style="text-indent: 2em">
+                    I also obtained a bachelor science degree in information systems and applied mathematics from SBU in May 2012. 
+                    After graduation from the undergraduate college, I served as a technology solution analyst in Cognizant Technology Solutions U.S. Corporation 
+                    for one year, where I gained knowledge in VB and C#.NET, as well as the domain knowledge in the insurance industry. 
+                    With one year industry experience, I decided to come back to SBU for my master degree, aiming computer science major this time.
+                </p>
+                <p style="text-indent: 2em">
+                    In my spare time, I like swimming and playing recorder. 
+                    I am also passionate in singing and actively serve in a church choir. 
+                    I am also a <q>chef</q> being able to cook yummy Chinese food :)
+                </p>
+
+                <div>
+                    <hr />
+                </div>
+
+                <!-- Class Taking in Spring 2014 -->
+                <div class="list-head">Courses in Spring 2015 Semester:</div>
+                <table>
+                    <tr>
+                        <td class="lists_image">
+                            <img src="./images/lists/icon_course.jpg" alt="course" />
+                        </td>
+                        <td>
+                            <table cellspacing="5">
+                                <tr>
+                                    <th>Course No.</th><th>Course Title</th><th>Instructor</th>
+                                </tr>
+                                <tr>
+                                    <th><a href="http://nrg.cs.stonybrook.edu/spring-2015-fundamentals-of-computer-networks-cse-534/" target="cse534">CSE 534</a></th>
+                                    <td>Fundamentals of Computer Networks</td>
+                                    <td>Prof. <a href="http://www3.cs.stonybrook.edu/~phillipa/index.php" target="Gill">Phillipa Gill</a></td>
+                                </tr>   
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- RIGHT FLOAT -->
+            <div class="rightfloat">
+                <div class="content-image"><img src="./images/main/main_01.jpg" alt="" id="image_gallery"/>
+                    <script language="javascript" type="text/javascript">
+                        var c= 1;
+                        loopImages();
+                        function loopImages()
+                        {
+                            document.getElementById("image_gallery").src="images/main/main_0" + c + ".jpg";
+                            c= c + 1;
+                            if (c == 8)
+                                c = 1;
+                            t=setTimeout("loopImages()",4000);
+                        }
+                    </script>
+                </div>
+
+                <img src="./images/lists/pop_news.png" alt="news" class="rightcol"/>
+                <div class="news_box">
+
+					<p class="time">June 19, 2015</p>
+                    <p style="text-indent: 1em">Ben was interviewed with the SDE position
+					at <a href="https://www.zocdoc.com/" target="_blank">ZocDoc</a>
+                    </p>
+					
+					<p class="time">May 22, 2015</p>
+                    <p style="text-indent: 1em">Ben graduated with a master degree in 
+					<a href="https://www.cs.stonybrook.edu/" target="_blank">Computer Science</a>
+                    </p>
+
+					<p class="time">Feb 19, 2015</p>
+                    <p style="text-indent: 1em">Ben attended the 
+                    <a href="http://career.stonybrook.edu/employers/job-fair-information" target="jobfair">Information Technology Job Fair</a> 
+                    hosted by the Career Center at Stony Brook University                    .
+                    </p>				
+										
+                </div>
+            </div>
+        </div>
+        <!--FOOTER-->
+		<div id="footer"></div>
+		<div class="footer-container">
+			<script type="text/javascript">
+				/* <![CDATA[ */
+				document.write("Last Modified " + document.lastModified)
+				/* ]]> */
+			</script>
+		</div>
+	</body>
+</html>

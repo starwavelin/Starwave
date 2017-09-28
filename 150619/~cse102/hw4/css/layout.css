@@ -1,0 +1,179 @@
+#banner-container{
+    width:960px;
+    height:120px;
+    background-image:url('../images/companylogo.jpg');
+            /* The reason to use .. is because that we reference the image
+               from layout.css, which is inside the css folder rather than referenceing from index.html ! */
+    background-position: center;
+    margin:0px auto;
+}
+
+#nav-container{
+    width:960px;
+    height:32px;
+    text-align:center;
+    margin:0 auto;
+    background-color:#c0c0c0;
+}
+
+#body-container{
+    width:960px;
+    margin:0 auto;
+}
+
+#left-container-home{
+    width:520px;
+    height:480px;
+    float:left;
+    background-color:#fffafa;
+}
+
+#right-container-home{
+    width:440px;
+    height:480px;
+    float:right;
+    background-color:#fffafa;
+}
+
+div.companynews{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    width: 480px;
+    height: 440px;
+    background-color:#fffafa;
+}
+
+div.travellines{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    width: 400px;
+    height: 440px;
+    background-color:#fffafa;
+}
+
+div.about-container{
+    width:960px;
+    height:960px;
+    margin:0 auto;
+    background-color:#fffafa;
+    float:left;
+}
+
+div.about-content{
+    margin-left:100px;
+    margin-right:100px;
+    height:960px;
+    width:760px;
+    background-color:#fffafa;
+}
+
+div.contact-container{
+    width:960px;
+    height:550px;
+    margin:0 auto;
+    background-color:#fffafa;
+    float:left;
+}
+
+div.contact-content{
+    margin-left:150px;
+    margin-right:150px;
+    height:550px;
+    width:660px;
+    background-color:#fffafa;
+}
+
+
+div.right-p{
+    height:250px;
+}
+div.left-image2{
+    float: left;
+    margin-right:1em;
+    height: 250px;
+}
+
+
+#left-container{
+    width:240px;
+    height:750px;
+    float:left;
+    background-color:#fffafa;
+}
+
+div.left-col{
+    height: 750px;
+    width: 200px;
+    margin: 20px 20px;
+}
+
+#right-container{
+    width:720px;
+    height:750px;
+    float:right;
+    background-color:#fffafa;
+}
+
+div.right-col{
+    height: 750px;
+    width: 680px;
+    margin: 20px 20px;
+}
+
+/* For Travel Lines*/
+#left-container-t{
+    width:240px;
+    height:960px;
+    float:left;
+    background-color:#fffafa;
+}
+
+div.left-col-t{
+    height: 960px;
+    width: 200px;
+    margin: 20px 20px;
+}
+
+#right-container-t{
+    width:720px;
+    height:960px;
+    float:right;
+    background-color:#fffafa;
+}
+
+div.right-col-t{
+    height: 960px;
+    width: 680px;
+    margin: 20px 20px;
+}
+/* End For Travel Lines */
+
+
+div.left-image{
+    float: left;
+    margin-right:1em;
+}
+
+div.right-image{
+    float: right;
+    margin-left:1em;
+}
+
+span.credit{
+    text-align: center;    
+    font-size: x-small;
+}
+
+#footer{
+    width:960px;
+    margin: 0px auto;
+    background-color:#fff5ee;
+    font-size: 9pt;
+    text-align: center;
+}
+
+#footer-text{
+    text-align:center;
+}

@@ -1,0 +1,3 @@
+Right Column Picture 
+Font-style: Kristen ITC
+Font-size: 28

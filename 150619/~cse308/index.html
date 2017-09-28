@@ -1,0 +1,355 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>CSE308 Software Engineering Projects | Requirements</title>
+        <link rel="icon" href="../images/icons/me.png" type="image/png" />
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
+        <script type="text/javascript" src="../js/jquery-1.10.2.js"></script>
+		<script>
+			$(function() {
+				$("#header").load("header.html");
+				$("#footer").load("footer.html");
+			});
+		</script>
+        <!-- jquery-1.2.6.pack.js is essential for auto height resize! -->
+        <script type="text/javascript" src="../js/jquery-1.2.6.pack.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                // auto height resize
+                $('div.rightfloat').height($('div.leftfloat').height());
+            });
+        </script>
+    </head>
+
+    <body>
+        <!--HEADER-->
+        <div id="header"></div>
+        
+        <div class="main-head-container">
+        <!-- Content Main -->
+
+            <!-- LEFT FLOAT -->
+            <div class="leftfloat">
+                <h2>Software Engineering Project: Requirements of Undergraduate Majors</h2>
+                <h2>Requirement Analysis</h2>
+                <div>
+                    <h3>Goal: What is Requirements of Undergraduate Majors (RUM) system?</h3>
+                    <h4>It is a system that</h4>
+                    <p>Helps undergraduate students determine whether they are on track to satisfy the major requirements in a timely fashion.</p>
+                    <ul><li>For example, a student can submit a major and course plan,
+                            which includes courses they have taken and courses they plan to take,
+                            and the system will check all the requirements for that major and indicate which requirements,
+                            if any, are not satisfied by the course plan.</li></ul>
+                    <p>Helps departmental administrative staff determine whether to clear a student for graduation.</p>
+                    <ul><li>For example, when a student is ready to graduate, the department's undergraduate secretary
+                            can export the student's course information from the registrar's information system and then import it into
+                            this system as a course plan, and the system will indicate which quirements, if any, are not satisfied.</li></ul>
+
+                    <h4>Detailed Requirements for Different Majors</h4>
+                    <p>The 4 Stony Brook University majors that our project will support:</p>
+                    <ul>
+                        <li>CSE--computer science</li>
+                        <li>ISE--Information Systems</li>
+                        <li>MEC--Mechanical Engineering</li>
+                        <li>ESE--Electrical Engineering</li>
+                    </ul>  
+                    <p>Specializations within a major</p>
+                    <ul><li>For the convenience, specializations of a major would be counted as different majors. For instance,
+                        information security specialization of the computer science major would be viewed different from the
+                        regular CSE track. We may assign a major code "CSEIS" for this specialization</li></ul>
+                    <p>Requirement Version</p>
+                    <ul><li>example: 2010 version.</li></ul>
+                    <p>Requirements: 3 kinds</p>
+                    <ol>
+                        <li>Course requirements ----courses must be taken</li>
+                        <li>GPA requirements-----a minimum GPA for a set of courses</li>
+                        <li>Residency requirements------require that some courses be taken at Stony Brook University
+                            (as opposed to transfer of credits for an equivalent course at another institution)</li>
+                    </ol>
+
+                    <h4>Course Offerings</h4>
+                    <p>System maintains information about courses offered in each semester.</p>
+                    <ul>
+                        <li>Course</li>
+                        <ul><li>Examples: CSE 308, MAT 125</li></ul>
+                        <li>Semester</li>
+                        <ul><li>(Fall, Winter, Spring, SummerI, or SummerII) and the year.</li></ul>
+                        <li>Status  (provide tentative information about likely course offerings)</li>
+                        <ul><li>(definite or tentative)</li></ul>
+                    </ul>
+
+                    <h4>Student Information</h4>
+                    <ul>
+                        <li>Major</li>
+                        <li>Requirement year (Matriculation year)</li>
+                        <ul>
+                            <li>The year the student entered the university</li>
+                            <li>The year of the student's most recent return from a leave of absence</li>
+                        </ul>
+                        <li>Requirement version (The version of the degree  requirements that the student wishes to satisfy</li>
+                        <ul><li>requirement version >= requirement year</li></ul>
+                        <li>Course Plan</li>
+                        <ul>
+                            <li>Set of entries representing courses the student has taken, is currently taking, or plans to take. </li>
+                            <li>Each entry contains:</li>
+                            <ul>
+                                <li>Course</li>
+                                <ul>
+                                    <li>example: CSE308</li>
+                                </ul>
+                                <li>Semester</li>
+                                <ul>
+                                    <li>a semester (e.g. Fall 2010) or a special value (e.g. null) meaning "unspecified"</li>
+                                </ul>
+                                <li>Suggested (true or false)</li>
+                                <ul>
+                                    <li>True -- System suggested some information in this entry, and the student has not yet confirmed its acceptability</li>
+                                    <li>False -- Student provided all of the information; the system suggested the information and student confirmed it.</li>
+                                </ul>
+                            </ul>
+                        </ul>
+                        <li>Grade</li>
+                        <ul>
+                            <li>A grade</li>
+                            <li>A value (e.g. null) indicating the grade is unknown yet</li>
+                        </ul>
+                        <li>Transfer (true or false)</li>
+                        <ul>
+                            <li>True -- An approved equivalent course was taken at another institution</li>
+                            <li>False -- The course was taken at Stony Brook</li>
+                        </ul>
+                    </ul>
+
+                    <h4>Maintaining Student Information and Checking Requirements</h4>
+                    <ul>
+                        <li>Display student information</li>
+                        <ul>
+                            <li>Student information (current session)</li>
+                            <li>Course plan</li>
+                            <ul>
+                                <li>Tentative course offerings should be visibly distinguished from definite course offerings</li>
+                                <li>The course offering information does not indicate that the course will be offered that semester should be visibly distinguished from other entries. (System's course offering information may be incomplete.)</li>
+                            </ul>
+                        </ul>
+                        <ul>
+                            <li>Edit student information</li>
+                            <ul>
+                                <li>Current session</li>
+                                <li>The system stores this information until the user terminates the session</li>
+                                <li>If student information has not been uploaded in this session, editing starts from "empty" student information</li>
+                            </ul>
+                        </ul>
+                        <ul>
+                            <li>Download student information</li>
+                            <ul>
+                                <li>Current session</li>
+                                <li>Download student information, and uploading it next time he/she uses the system</li>
+                            </ul>
+                        </ul>
+                        <ul>
+                            <li>Upload student information</li>
+                            <ul>
+                                <li>Reads a file containing student information</li>
+                                <ol>
+                                    <li>Import csv-format transcript.
+(Courses a student has taken or is taking, course plan associated with the current session, grade (may be empty))</li>
+                                    <ul><li>examples: Fall 2009,BIO 201,A-</li></ul>
+                                    <li>Import SOLAR-format transcript (Extra credit) (HTML file produced by using SOLAR)</li>
+                                </ol>
+                            </ul>
+                        </ul>
+                        <ul>
+                            <li>Check requirement</li>
+                            <ul>
+                                <li>Satisfied or not satisfied.</li>
+                                <li>Users request check requirement, or system continuously updates the display to reflect this information.</li>
+                                <li>The system give feedback about unsatisfied requirements. These unsatisfied requirements may include:</li>
+                                <ol>
+                                    <li>E.g. relevant courses were not taken</li>
+                                    <li>E.g. grade was too low.</li>
+                                    <li>E.g Course plan contains sufficient courses to satisfy a particular requirement, but the grades for some of those courses are unknown, the system should indicate the status of the requirement as "pending" and indicate the minimum grades that will be needed in those courses for the requirement to be satisfied.</li>
+                                    <ul>
+                                        <li>For Course requirements ,"CS 2009" and "CS 2009: 2.  Required Advanced Courses: part 1" are "expected to be satisfied" under the condition that the grade in CSE 308 is a C or higher.</li>
+                                        <li>For a GPA requirement, the status of the GPA requirement should be reported as "pending" (not "unsatisfied").</li>
+                                    </ul>
+                                </ol>
+                            </ul>
+                        </ul>
+                        <ul>
+                            <li>Suggest schedule</li>
+                            <ul>
+                                <li>Assign semesters to entries with semester==null in the course plan, consistent with the course offerings</li>
+                                <li>Sets "suggested" to true for those entries.</li>
+                                <li>Never schedules in course plan that are not listed as definitely or tentatively scheduled, although the user may do that.</li>
+                                <li>The suggested schedule should be consistent with course prerequisites.</li>
+                                <li>Minimize</li>
+                                <ol>
+                                    <li>The number of semesters until all requirements are satisfied</li>
+                                    <li>The number of entries with tentatively scheduled courses.</li>
+                                </ol>
+                            </ul>
+                        </ul>
+                        <ul>
+                            <li>Exit</li>
+                            <ul>
+                                <li>Student information associated with the current session is discarded.</li>
+                            </ul>
+                        </ul>
+                    </ul>
+
+                    <h4>Administration of Course Offerings and Course Prerequisites</h4>
+                    <ul>
+                        <li>Load course offerings</li>
+                        <ul>
+                            <li>Reads from a specified file, or from files in a specified directory.</li>
+                            <li>Adds the information to its database.</li>
+                            <li>The system does this at startup, and an administrator may invoke this function later.</li>
+                            <ul>
+                                <li>examples:  Fall 2010,CSE 308</li>
+                            </ul>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <li>Delete all course offerings</li>
+                        <ul>
+                            <li>Deletes all information from the in-memory course offering database.</li>
+                            <li>Administrator calls this function before loading updated course offering information.</li>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <li>Delete specified course offerings</li>
+                        <ul>
+                            <li>Deletes course offering information for a specified semester or a specified subject.</li>
+                            <li>Administrator calls this function before loading updated course offering information for a semester.</li>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <li>Load course prerequisites</li>
+                        <ul>
+                            <li>Reads from a specified file, or from files in a specified directory</li>
+                            <li>Adds the information to its database</li>
+                            <li>The system does this at startup, and an administrator may invoke this function later, while the system is running</li>
+                            <ul>
+                                <li>Example: CSE 312, (U3|U4)</li>
+                                <li>Example: CSE 305, ((CSE 219|CSE 260)&CSE 220)</li>
+                            </ul>
+                        </ul>
+                    </ul>
+
+                    <h4>ADMINISTRATION OF REQUIREMENTS FOR MAJORS</h4>
+                    <ul>
+                        <li>FILE-BASED ADMINISTRATION or</li>
+                        <ul>
+                            <li>load requirements</li>
+                            <ul>
+                                <li>Loads information from a specified file, or from files in a specified directory, into the database.</li>
+                                <li>Delete existing requirements for major. Insert new requirements.</li>
+                                <li>The file should not contain code in a conventional programming language.</li>
+                            </ul>
+                            <li>Delete all requirements</li>
+                            <li>Delete requirements for specified major</li>
+                        </ul>
+                        <li>GUI-BASED ADMINISTRATION</li>
+                        <ul>
+                            <li>Creating, editing, and deleting requirements for majors</li>
+                            <li>Allow the user to create a new version of requirements from an existing version</li>
+                            <li>The system stores the information in a persistent database or a file (which does not need to be human-readable)</li>
+                            <li>When the system starts up, it reads all requirements into its in-memory database</li>
+                        </ul>
+                    </ul>
+
+                    <h4>OTHER SYSTEM REQUIREMENTS</h4>
+                    <ul>
+                       <li>System security</li>
+                       <ul>
+                           <li>Administrative functions (i.e., functions related to course offerings and requirements for majors) should be password-protected.</li>
+                       </ul>
+                       <li>Network security</li>
+                       <ul>
+                           <li>Use of secure communication is not required.</li>
+                       </ul>
+                       <li>Concurrency</li>
+                       <ul>
+                           <li>Multiple users may use the system concurrently, to enter student information, check requirements, etc.</li>
+                           <li>Administrative functions may be invoked while other users are using the system.</li>
+                           <li>Synchronization should be used to ensure reasonable behavior.</li>
+                       </ul>
+                       <li>No arbitrary limits</li>
+                       <ul>
+                           <li>For example:</li>
+                           <ul>
+                                <li>No limit on the number of entries in a course plan</li>
+                                <li>No limit on the number of courses involved in a course requirement.</li>
+                           </ul>
+                       </ul>
+                    </ul>
+
+                </div>
+            </div>
+
+
+            <!-- RIGHT FLOAT -->
+            <div class="rightfloat">
+                <h2 class="bg_more"></h2>
+                <div>
+                <table width="230" cellpadding="5px" cellspacing="2px" style="padding-top:10px; margin: 0px 0px; font-size: 9pt">
+                    <tr>
+                        <td width="50"><img src="images/req-analysis.gif" alt="req" width="40"/></td>
+                        <td width="151">
+                            <table width="151">
+                                <tr><td>Requirement Analysis</td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50"><img src="images/design.png" alt="design" width="40"/></td>
+                        <td width="151">
+                            <table width="151">
+                                <tr><td><a href="design.html">Design</a></td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50"><img src="images/code.png" alt="code" width="40"/></td>
+                        <td width="151">
+                            <table width="151">
+                                <tr><td><a href="code.html">Code</a></td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50"><img src="images/test.png" alt="test" width="40"/></td>
+                        <td width="151">
+                            <table width="151">
+                                <tr><td><a href="test.html">Test</a></td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50"><img src="images/deployment.png" alt="deployment" width="40"/></td>
+                        <td width="151">
+                            <table width="151">
+                                <tr><td><a href="./deployment.html">Deployment</a></td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                </div>
+            </div>
+        </div>
+        <!--FOOTER-->
+        <div id="footer"></div>
+		<div class="footer-container">
+			<script type="text/javascript">
+				/* <![CDATA[ */
+				document.write("Last Modified " + document.lastModified)
+				/* ]]> */
+			</script>
+		</div>
+
+    </body>
+</html>
+
+
+

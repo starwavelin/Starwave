@@ -1,0 +1,18 @@
+/* 
+    Document   : default
+    Created on : Feb 12, 2011, 10:39:59 AM
+    Author     : Benjamin Lin
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+body{
+    background-color: #9999FF;
+    color:#224422;
+    font-family:Verdana,sans-serif;
+}
+

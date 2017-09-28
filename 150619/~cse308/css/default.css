@@ -1,0 +1,21 @@
+/* 
+    Document   : default
+    Created on : Feb 12, 2011, 3:38:33 PM
+    Author     : Benjamin Lin
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+#box{
+    margin: 0px auto 0px auto;
+    text-align:center;
+    vertical-align: middle;
+    
+   /* border:1px dashed #d3d3d3; */
+    
+}

@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>CSE308 Software Engineering Projects | Deployment</title>
+        <link rel="icon" href="../images/icons/me.png" type="image/png" />
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
+        <script type="text/javascript" src="../js/jquery-1.10.2.js"></script>
+		<script>
+			$(function() {
+				$("#header").load("header.html");
+				$("#footer").load("footer.html");
+			});
+		</script>
+        <!-- jquery-1.2.6.pack.js is essential for auto height resize! -->
+        <script type="text/javascript" src="../js/jquery-1.2.6.pack.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                // auto height resize
+                $('div.rightfloat').height($('div.leftfloat').height());
+            });
+        </script>
+    </head>
+
+    <body>
+        <!--HEADER-->
+        <div id="header"></div>
+        
+        <div class="main-head-container">
+        <!-- Content Main -->
+
+            <!-- LEFT FLOAT -->
+            <div class="leftfloat">
+                <h2>Software Engineering Project: Requirements of Undergraduate Majors</h2>
+                <h2>Deployment</h2>
+                <h4>Sample JUnit Test Code</h4>
+                <ol>
+                    <li>Instructions for installing, configuring, and starting the server side of the system:</li>
+                    <ul>
+                        <li>Required Softwares:</li>
+                        <ol>
+                            <li>Windows XP/Vista/7</li>
+                            <li>jdk6.0</li>
+                            <li>NetBeans 6.9 or above with glassfish server</li>
+                            <li>MySQL server</li>
+                        </ol>
+                        <li>Configures:</li>
+                        <ol>
+                            <li>install jdk (ex:..\java\jdkxxx);</li>
+                            <li>
+                                add java to environment variable;
+                                <code>
+                                JAVA_HOME=..\java\jdkxxx
+                                path=%JAVA_HOME%\bin;
+                                </code>
+                            </li>
+                            <li>NetBeans ide should recognize the java bin path, so install jdk before
+                            install NetBeans;</li>
+                            <li>Install MySQL(ex:..\MySQL)</li>
+                            <ol>
+                                <li>next-custom-next-ok-next-install</li>
+                                <li>create account</li>
+                                <li>configure mysql server</li>
+                                <ul>
+                                    <li>detailed configuration</li>
+                                    <li>developer machine</li>
+                                    <li>multi-functional database</li>
+                                    <li>choose innoDB location</li>
+                                    <li>manual setting, set max number (any reasonable number)</li>
+                                    <li>tcp/ip, set default 3306 should be fine</li>
+                                    <li>choose "multi language" will support more</li>
+                                    <li>choose a service name, default 'MySQL'</li>
+                                    <li>check launch the MySQL server automatically</li>
+                                    <li>choose a root password for yourself;
+                                        do not create an anonymous account for the safety issue</li>
+                                    <li>execute, should see service started successfully</li>
+                                    <li>finish</li>
+                                </ul>
+                            </ol>
+                            <li>add MySQL to the environment variable</li>
+                            <ul>
+                                <li>path = ...\MySQL\bin</li>
+                            </ul>
+                            <li>Test:</li>
+                            <ol>
+                                <li>cmd /* start command line window */</li>
+                                <li>java -version /* if jdk configures correctly, version will be displayed */</li>
+                                <li>mysql --version /* if mysql configures correctly, version will be displayed */</li>
+                            </ol>
+                            <li>create database:</li>
+                            <ul>
+                                <li>mysql -u root -p</li>
+                                <li>password</li>
+                                <li>create database rumast;</li>
+                            </ul>
+                            <li>import database: </li>
+                            <ul>
+                                <li>
+                                    after log into mysql, use <code> mysql> source d:\er.sql </code>/*location of your sql file*/
+                                </li>
+                            </ul>
+                        </ol>
+                        <li>Start Server:</li>
+                        <ol>
+                            <li>start NetBeans;</li>
+                            <li>open project -> select project directory;</li>
+                            <li>right click to set rum project as main project;</li>
+                            <li>run project, it will start the system default
+                                browser and display index page;</li>
+                            <li>if you know your ip address (ipconfig), and
+                                you have access to the router, you may set port forward
+                            to allow outside Internet access.</li>
+                        </ol>
+                    </ul>
+                    <li>Instructions for installing, configuring, adn starting the client side of the system:</li>
+                    <ul>
+                        <li>Required Software:</li>
+                        <ul>
+                            <li>IE/Firefox/Chrome or other major browsers</li>
+                        </ul>
+                        <li>Configures:</li>
+                            <li>LAN access if in the same LAN with Server;</li>
+                            <li>Internet access if not in the same LAN with Server;</li>
+                            <li>No need any extra configuration, default configure of browsers is fine.</li>
+                        <li>Start System:</li>
+                        <ol>
+                            <li>open browser;</li>
+                            <li>enter url of the server page;</li>
+                            <li>start surfing.</li>
+                        </ol>
+                    </ul>
+                    <li>Setup for the log file</li>
+                    <ol>
+                        <li>Setup log file root location:</li>
+                        <ul>
+                            <li>In this case the path for the log file to be stored is d:/log_rum/</li>
+                            <li>Create such a folder called "log_rum" under D drive. Otherwise, an error
+                            "Problems with creating the log files" will occur.</li>
+                        </ul>
+                        <li>Generate a new log file:</li>
+                        <ul>
+                            <li>Level.FINE is the minimum level that will be logged.</li>
+                            <li>There are several standard error in the level of fine /.../info/server/warning will be logged.</li>
+                            <li>log_register.txt will be created when new student registers.</li>
+                            <li>log_regular.txt will be created when an actor logs in.</li>
+                            <li>If you log more than one time on the same txt file, log will be appended/rewritten.</li>
+                            <li>You can clear up the log history manually.</li>
+                        </ul>
+                        <li>Message from log file:</li>
+                        <ul>
+                            <li>Users are able to see the message from the system. The status of the action
+                            they have performed and the error message form the system.</li>
+                            <li>When system has message labeled as server and warning, that indicates
+                                something goes wrong.</li>
+                        </ul>
+                    </ol>
+                    <li>Setup SQL connection URL and path</li>
+                    <ol>
+                        <li>Our current database is running on a local machine.</li>
+                        <li>In order to work on your machine, you need to create a database on your own machines as well.</li>
+                        <li>Inside the DB/GoSQL.java, you will see we set up our MySQL as follows:</li>
+                        <ul>
+                            <li><code>private static final String dbURL = 'jdbc:mysql://localhost:3306/rumast?';</code></li>
+                            <ul>
+                                <li>The URL address and the table name as "rumast"</li>
+                            </ul>
+                            <li><code>private static final String dbUser = 'root';</code></li>
+                            <ul>
+                                <li>The user name as "root"</li>
+                            </ul>
+                            <li><code>private static final String dbPwd = '1234';</code></li>
+                            <ul>
+                                <li>the user password as "1234"</li>
+                            </ul>
+                        </ul>
+                        <li>Also, since we are running the database locally, you also need to create table.</li>
+                        <ul>
+                            <li>The DB/sql.sql contains the query to create table.</li>
+                            <li>The DB/sampleData.sql contains the query to add data into table.</li>                            
+                        </ul>
+                    </ol>
+                </ol>
+                
+            </div>
+
+
+            <!-- RIGHT FLOAT -->
+            <div class="rightfloat">
+                <h2 class="bg_more"></h2>
+                <div>
+                <table width="230" cellpadding="5px" cellspacing="2px" style="padding-top:10px; margin: 0px 0px; font-size: 9pt">
+                    <tr>
+                        <td width="50"><img src="images/req-analysis.gif" alt="req" width="40"/></td>
+                        <td width="151">
+                            <table width="151">
+                                <tr><td><a href="index.html">Requirement Analysis</a></td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50"><img src="images/design.png" alt="design" width="40"/></td>
+                        <td width="151">
+                            <table width="151">
+                                <tr><td><a href="design.html">Design</a></td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50"><img src="images/code.png" alt="code" width="40"/></td>
+                        <td width="151">
+                            <table width="151">
+                                <tr><td><a href="code.html">Code</a></td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50"><img src="images/test.png" alt="test" width="40"/></td>
+                        <td width="151">
+                            <table width="151">
+                                <tr><td><a href="test.html">Test</a></td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50"><img src="images/deployment.png" alt="deployment" width="40"/></td>
+                        <td width="151">
+                            <table width="151">
+                                <tr><td>Deployment</td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                </div>
+            </div>
+        </div>
+        <!--FOOTER-->
+        <div id="footer"></div>
+		<div class="footer-container">
+			<script type="text/javascript">
+				/* <![CDATA[ */
+				document.write("Last Modified " + document.lastModified)
+				/* ]]> */
+			</script>
+		</div>
+
+    </body>
+</html>
+
+
+
