@@ -1,6 +1,7 @@
 # Starwave
 
-Description: This is the repository storing different versions of my personal website, ordered in the inversely chronological order.
+Description: This is the repository storing different versions of my personal website.
+The following list shows them in the inversely chronological order.
 
 * current: 
 	* My Biography and resume
@@ -11,5 +12,6 @@ Description: This is the repository storing different versions of my personal we
 
 
 * 150214: The last version of my personal site hosted on the student sparky account of [SBU](http://www.stonybrook.edu/), under username [xianlin](http://www.ic.sunysb.edu/stu/xianlin/)
+	* A static website listing my significant school courses and projects
 	* Tech used: JavaScript, jQuery, HTML, CSS
-	* A static website without backend interaction
+	
