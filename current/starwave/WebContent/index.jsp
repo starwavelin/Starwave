@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
-<title>Benjamin X. Lin | Starwavelin's Cabin, A Web/Mobile Engineer's Home</title>
+<title>Benjamin X. Lin | Starwavelin's Cabin, A Full-stack Engineer's Home</title>
 <link rel="icon" href="images/icons/icon-surn.png" type="image/png" />
 
 <!-- bootstrap-3.3.4 css -->
@@ -62,7 +62,7 @@
 			<li id="menu-item-prediction" class="menu-item scroll"><a href="#prediction">Price Prediction</a></li>
 			<li id="menu-item-blank" class="menu-item scroll">&nbsp;</li>
 			<li id="menu-item-contact" class="menu-item scroll"><a href="#contact">Contact</a></li>			
-			<li id="menu-item-oldsite" class="menu-item scroll"><a href="http://www.ic.sunysb.edu/stu/xianlin/" 
+			<li id="menu-item-oldsite" class="menu-item scroll"><a href="./150619/index.html" 
 			target="cos">
 				Classical Old Site</a>
 			</li>
@@ -322,7 +322,7 @@
 		<div id="go-to-top" onclick="scroll_to_top();"><span class="icon glyphicon glyphicon-chevron-up"></span></div>
 
 		<ul class="social-icons">
-			<li><a href="https://www.linkedin.com/pub/benjamin-x-lin-林-贤/28/12b/427" target="_blank" title="LinkedIn">
+			<li><a href="https://www.linkedin.com/in/ben-x-lin-42712b28/" target="_blank" title="LinkedIn">
 				<img src="images/icons/linkedin-icon.png" alt="Linkedin"></a></li>
 			<li><a href="https://github.com/starwavelin" target="_blank" title="Github">
 				<img src="images/icons/github-icon.png" alt="Github"></a></li>

@@ -1,9 +1,12 @@
+/* classical old site */
+**/150619
+
 
 *.class
-
 **/build
+
+
 **/WebContent/docs
 **/WebContent/count.txt
-
 **/src/common/IConstant.java
 
